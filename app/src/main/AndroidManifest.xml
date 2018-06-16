@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.friendconnection">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name=".firstscreen.SplashScreen"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mylocation.MapsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.ActivityHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".action.InforUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chat.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".action.UserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".friend.FriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".action.UpdateUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".chat.ChatUiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".friend.ScanCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schedule.ScheduleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schedule.AddScheludeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".firstscreen.PermissionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".firstscreen.SlideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schedule.NotiScheduleActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".MyService" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+        <receiver android:name=".schedule.ScheduleReciver" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="48dp">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="3dp"
+        card_view:cardPreventCornerOverlap="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/aldrich"
+                android:gravity="center"
+                android:text="LOGIN"
+                android:textColor="#151515"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/edtUserLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:digits="QWRETYUIOPASDFGHJKLZXCVBNMqwertyuiopasdffghjklzxcvbnm1234567890_"
+                    android:drawableLeft="@drawable/person"
+                    android:drawablePadding="12dp"
+                    android:fontFamily="@font/font_text"
+                    android:hint="@string/username" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/font_text"
+                    android:text="@string/remember_password"
+                    android:textColor="#3e3e3e"
+                    android:textSize="12sp" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switchLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:theme="@style/MySwitch" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/edtPassLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="-10dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:digits="QWRETYUIOPASDFGHJKLZXCVBNMqwertyuiopasdffghjklzxcvbnm1234567890_"
+                    android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                    android:drawablePadding="12dp"
+                    android:fontFamily="@font/font_text"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColorHighlight="#FF1470FC" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnNoAccount"
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                style="@style/PrimaryButton"
+                android:layout_gravity="right"
+                android:layout_marginBottom="16dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:gravity="right|center"
+                android:text="@string/create_an_account"
+                android:textColor="@color/colorPrimary"
+                android:textSize="10sp" />
+
+            <Button
+                android:theme="@style/PrimaryButton"
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="@string/login"
+                android:textColor="@color/cardview_light_background" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imtAvaFriendAdd"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:civ_circle_background_color="@color/colorWhite"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/user"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/txtFriendAdd"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/arimo"
+            android:lines="1"
+            android:text="@string/friend_name"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp" />'
+
+        <Button
+            android:id="@+id/btnAllowFriend"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:drawableLeft="@drawable/ic_check_black_24dp"
+            android:theme="@style/PrimaryButton" />
+
+        <Button
+            android:id="@+id/btnUnAllowFriend"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_close_black_24dp"
+            android:theme="@style/PrimaryButton" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

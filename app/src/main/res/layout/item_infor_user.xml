@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:translationZ="4dp">
+
+        <ImageView
+            android:id="@+id/imgAva"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="1dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user" />
+
+        <ImageView
+            android:id="@+id/imgChoose"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/choose_photo"
+            android:padding="1dp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtUsser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:text="UserName"
+        android:textColor="#181818" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:inputType="textCapWords"
+            android:drawableLeft="@drawable/person"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/font_text"
+            android:hint="@string/name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/edtMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:digits="QWRETYUIOPASDFGHJKLZXCVBNMqwertyuiopasdffghjklzxcvbnm1234567890_@."
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/font_text"
+            android:hint="@string/email" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/edtBirthDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_perm_contact_calendar_black_24dp"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/font_text"
+            android:hint="@string/birthday"
+            android:inputType="datetime" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/font_text"
+            android:hint="@string/phone"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/male"
+            android:theme="@style/CheckBox" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="@string/register"
+            android:text="@string/female"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp"
+            android:theme="@style/CheckBox" />
+
+
+    </RadioGroup>
+</LinearLayout>
